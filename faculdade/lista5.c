@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <math.h>
 
 int main (){
 
-
+/*
 
     //Questao 1
     printf("\n\nProgama de Criptografia: \n");
@@ -57,9 +58,42 @@ int main (){
         printf("\n\tO seu numero desencriptado e %d%d%d%d", dig3_crip, dig4_crip, dig1_crip, dig2_crip);
     }
 
+*/
 
 
     //Questao 2
+    printf("\n\nProgama Calcular Desvio de Padrão: \n");
+
+    int n_tamanho = 0, variavel_x, aux = 0;
+    float somatorio_do_xlinha = 0,desvio_padrao=0;
+
+    printf("\nDigite o indice final 'n' (tamanho):  ");
+    scanf("%d", &n_tamanho);
+
+    for(int i=0; i < n_tamanho; i++){
+       
+        printf("\nDigite a varivel 'x' no indice %d: ", i);
+        scanf("%d", &variavel_x);
+
+        somatorio_do_xlinha += variavel_x;
+
+        aux += variavel_x*(pow(10,n_tamanho-(i+1)));
+
+       printf("\n%d", aux);
+    } 
+
+    somatorio_do_xlinha = somatorio_do_xlinha / n_tamanho;
+
+    for(int j = 0; j < n_tamanho; j++){
+        aux %= (int)pow(10,n_tamanho-j);
+        printf("\n%d",aux); 
+        desvio_padrao += ((float)aux)/pow(10,n_tamanho-(j+1)) - somatorio_do_xlinha;
+    }
+
+    desvio_padrao = sqrt(desvio_padrao/(n_tamanho-1));
+
+    printf("\nMedia %f" ,somatorio_do_xlinha);
+    printf("\nDesvio padrao %f", desvio_padrao);
 
 
 
@@ -78,11 +112,7 @@ int main (){
 
 
 
-
-
-
-
-    //Questao 3
+    /*//Questao 3
     printf("\n\nProgama Serie Infinita de PI: \n");
 
     int divisor=1;
@@ -106,7 +136,7 @@ int main (){
     }
     
     printf("\n\n");
-    printf("%f", j);
+    printf("%f", j);*/
     
 
 
@@ -129,7 +159,7 @@ int main (){
 
 
     //Questao 4
-    printf("\n\nProgama Soma de E: \n");
+    //printf("\n\nProgama Soma de E: \n");
 
     //int num_n, soma_e;
 
