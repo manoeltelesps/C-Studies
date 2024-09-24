@@ -4,7 +4,7 @@
 
 int main (){
 
-/*
+
 
     //Questao 1
     printf("\n\Funcao Positivo ou Negativo: ");
@@ -15,6 +15,7 @@ int main (){
     scanf("%d", &num_posi_ou_nega);
 
     printf("\n%d",posouneg(num_posi_ou_nega));
+
 
 
 
@@ -31,6 +32,7 @@ int main (){
 	
 	
 
+
     //Questao 3
     printf("\n\Funcao de Soma e Divisao: ");
     
@@ -43,6 +45,7 @@ int main (){
     
 
 
+
     //Questao 4
     printf("\n\Funcao Conversor de Segundos: ");
 
@@ -53,6 +56,7 @@ int main (){
     
     printf("\n");
     conversor_seg(valorem_segundos);
+
 
 
 
@@ -101,9 +105,6 @@ int main (){
     printf("\n");
     retangulo(altura,largura);
 
-*/
-
-    
 
 
 
@@ -117,7 +118,45 @@ int main (){
     scanf("%d", &cpf);
 
     printf("%d-%d",cpf, ddcpf(cpf) );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+
+
+
+
+    //Questao 9
+    printf("\n\nHistograma: ");
+
+    printf("\n\n");
+    histograma();
+
+
+
+
+
+    //Questao 10
+    printf("\n\nCalculo de Area de um Circulo com Macro: ");
+
+    float raio, area_circ;
+
+    printf("\n\nDigite o raio qualquer, para descobrir a a area do circulo: ");
+    scanf("%f", &raio);
+
+    printf("\nA area do circulo e de aproximadamente %.4f", area_circ = PI * pow(raio,2));
+
+
+
+
+
+
+    //Questao 11
+    printf("\n\nCalculo Quadrado de um Numero com Macro: ");
+
+    int numer_antesquad;
+
+    printf("\n\nDigite um numero para descobrir seu quadrado: ");
+    scanf("%d", &numer_antesquad);
+
+    printf("\nO quadrado de %d e %d", numer_antesquad, QUAD(numer_antesquad));
 
 
 
@@ -125,13 +164,58 @@ int main (){
 
 
 
+    //Questao 12
+    printf("\n\nFuncao Bissexto: ");
+
+    int ano_bioun;
+
+    printf("\n\nDigite um ano: ");
+    scanf("%d", &ano_bioun);
+
+    printf("\n1) Sim\n0) Nao\n\nO ano %d e bissexto? %d", ano_bioun, testano(ano_bioun));
 
 
 
 
 
 
+    //Questao 13
+    printf("\n\nMacro Multiplo: ");
 
+    int num1_mult1, num2_mult2;
+
+    printf("Digite dois numeros, separando-os por espaco: ");
+    scanf("%d %d", &num1_mult1, &num2_mult2);
+
+    printf("\n1) Sim\n0) Nao\n\nO numero %d e multiplo do numero %d? %d", num1_mult1, num2_mult2, MULTIPLO(num1_mult1,num2_mult2));
+
+
+
+
+
+    //Questao 14
+    printf("\n\nMacro Vogal: ");
+
+    char letra;
+
+    printf("\n\nDigite um caracter: ");
+    scanf(" %c", &letra);
+
+    printf("\n1) Sim\n0) Nao\n\nO caracter '%c' e uma vogal? %d", letra, IS_VOGAL(letra));
+
+
+
+
+
+    //Questao 15
+    printf("\n\nMacro Valor Absoluto: ");
+
+    int num_valorabs;
+
+    printf("\n\nDigite um numero: ");
+    scanf("%d", &num_valorabs);
+
+    printf("\nO valor absoluto de %d e igual a %d", num_valorabs, ABS(num_valorabs));
 
 
 
