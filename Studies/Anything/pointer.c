@@ -3,7 +3,7 @@
 
 void maiorMenor(int *vetor, int tamanho, int *menor, int *maior);
 void troca (float*a, float*b);
-void localizador(int *vet, int posicao);
+void localizador(int *vet);
 
 int main(){
 /*
@@ -43,9 +43,9 @@ int main(){
     troca(&a, &b);
     printf("\nPos Troca: %f %f", a, b);
 
-*/
 
-    //Questao 2
+
+    //Questao 3
     int vet[10];
 
     printf("\n\n");
@@ -54,13 +54,42 @@ int main(){
         scanf("%d", &vet[i]);
     }
 
-    int posicao;
-
-    printf("\n\nDigite a posicao do elemento que deseja encontrar: ");
-    scanf("%d", &posicao);
-
     printf("\n\n");
-    localizador(vet,posicao);
+    localizador(vet);
+
+   
+
+    //Questao 4
+    
+    int A, *ptA, **pt_ptA, ***pt_pt_ptA;
+
+    ptA = &A;
+    pt_ptA = &ptA;
+    pt_pt_ptA = &pt_ptA;
+
+    // *pt_ptA == ptA == &A
+    // **pt_ptA == *ptA == A 
+                                                
+    // *pt_pt_ptA == pt_ptA == &ptA
+    // **pt_pt_ptA == *pt_ptA == ptA == &A
+    // ***pt_pt_ptA == **pt_ptA == *ptA == A
+
+
+    printf("\n\nDigite um numero: ");
+    scanf("%d", &A);
+
+    int dobro = *ptA + *ptA;
+    int triplo  = **pt_ptA + dobro;
+    int quadr = ***pt_pt_ptA + triplo;
+
+    printf("\nO seu dobro e %d\nO seu triplo e %d\nO seu quadraplo e %d ", dobro, triplo, quadr);
+  
+
+*/
+    
+
+
+
 
 
 
@@ -81,14 +110,9 @@ void maiorMenor(int *vetor, int tamanho, int *menor, int *maior){
                                     
         if(*(vetor+j)>*maior)
             *maior = *(vetor+j);   
-    }
-
-    /* Maneira de troca muito simples logo a cima, e muito efeitva, 
-    agora porque n precisa comparar com ele mesmo??? Não sei depois pesquiso.
-    No meu ver aprendendo deveria ter um else if onde o menor comparava com o propio valor dele,
-    assim como no maior.
+    }.
     
-    Aparentemente é porque eu estou comparando apenas para achar o valor, e não para organaliza-los, até que faz sentido.*/
+    //A troca é porque eu estou comparando apenas para achar os extremos, e não para organaliza-los, até que faz sentido.*/
 }
 
 void troca (float*a, float*b){
@@ -96,17 +120,17 @@ void troca (float*a, float*b){
     /*float aux;
 
     aux = *a;
-    *a = *b;            //Aqui troca eles de posição, eu deixei alterando o valor mesmo logo abaixo
-    *b = aux;*/
+    *a = *b;    */       
 
     *a = 6, *b = 9;
 }
 
-void localizador(int *vet, int posicao){
+void localizador(int *vet){
 
 
-    for(int j=0; j<=posicao; j++){
-        if(j==posicao)
-            printf("O numero %d esta na posicao %d", vet[j], j);
+    for(int j=0; j<10; j++){
+      printf("Posicao: %d e Numero: %d\n", j, vet[j]);
     }
+    
+    // printf("Posicao: %d e Numero: %d\n", j+1, vet[j]); --> Ficando assim, mas vou deixar sem o +1, para não confundir a minha compreensão de arrays unidimensionais. 
 }
