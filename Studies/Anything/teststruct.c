@@ -1,22 +1,26 @@
 #include <stdio.h>
+#include <string.h>
 
-int teste(int x){
+struct Pessoa{
+    char nome[100] ;
+    int idade; 
+    float altura;
+};
 
-    x = 50;
+//x = nome, y = idade, z = altura.
+struct Pessoa criar(char x[], int y, float z){
+    struct Pessoa novaPessoa;
+        strcpy(novaPessoa.nome, x);
+        novaPessoa.idade = y;
+        novaPessoa.altura = z; 
 
-    return x;
-
-}
-
+    return novaPessoa;
+};
 
 int main (){
 
-    int valor = 10;
-
-    int proxima = teste(valor);
-
-    printf("%d\n", valor);
-    printf("%d\n", proxima);
+    struct Pessoa p = criar("Lucas", 20, 1.79);
+    printf("%s, %d, %.2f", p.nome, p.idade, p.altura);
 
     return 0;
 }
