@@ -4,13 +4,31 @@
             "name": "MSYS2",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/msys64/ucrt64/bin"
+                "C:/msys64/ucrt64/include",
+                "C:/msys64/ucrt64/include/c++/14.1.0",
+                "C:/msys64/ucrt64/include/c++/14.1.0/ucrt",
+                "C:/msys64/ucrt64/include/c++/14.1.0/backward",
+                "C:/msys64/ucrt64/include/w32api",
+                "C:/msys64/ucrt64/include/posix"
             ],
             "defines": [],
-            "compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64"
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "C:/msys64/ucrt64/include",
+                    "C:/msys64/ucrt64/include/c++/14.1.0",
+                    "C:/msys64/ucrt64/include/c++/14.1.0/ucrt",
+                    "C:/msys64/ucrt64/include/c++/14.1.0/backward",
+                    "C:/msys64/ucrt64/include/w32api",
+                    "C:/msys64/ucrt64/include/posix"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
         }
     ],
     "version": 4

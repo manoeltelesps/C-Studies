@@ -1,34 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct no{
 
-int fatorial(int x){
-
-    if(x == 1)
-        return 1;
-
-    else
-        return x*(fatorial(x-1));
-    
-}
-
+    int dado;
+    struct no *proximo;
+}No;
 
 int main(){
 
-    int numero, y;
+    No *topo;
 
-    printf("\nDigite um numero maior que zero para fazer seu fatorial: ");
-    scanf("%d", &numero);
+    topo -> dado = 5;
 
-    printf("\n");
+    No *atual = (No *)malloc(sizeof(No));
 
-    if(numero <= 0)
-        printf("O numero tem que ser MAIOR zero(0)");
-    else{     
-        y = fatorial(numero);
-        printf("%d", y);
+    if(atual == NULL){
+
+        atual = topo;
+        topo -> proximo = NULL;
+    }
+    else{
+        atual = proximo -> topo;
     }
 
-    return 0;
+    printf("%d", topo -> dado);
+
+
+
+
 
 }
