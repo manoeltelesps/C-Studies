@@ -2,5 +2,21 @@
     "files.associations": {
         "cmath": "c"
     },
-    "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe"
+    "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+    
+    
+    "C_Cpp.errorSquiggles": "Enabled",
+    
+    
+    "C_Cpp.intelliSenseEngine": "Default",
+
+    
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+
+    
+    "editor.parameterHints.enabled": true
 }
