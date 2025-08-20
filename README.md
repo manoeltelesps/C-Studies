@@ -1,12 +1,7 @@
-# Estudos Linguagem C
-
-Repositório de estudos da linguagem C com exercícios, exemplos práticos e projetos. Exercícios de programação em C organizados por tópicos e projetos práticos para fixação do aprendizado.
+# C Programming 🔧
+Este repositório contém uma coleção de exercícios, projetos e materiais de estudo focados na linguagem C. Inclui implementações de algoritmos, estruturas de dados e projetos práticos para consolidar conceitos fundamentais da programação.
 
 -----
-
 ### Autor
-
-  * **Manoel Teles**
-  * **LinkedIn:** [Manoel Pedro](https://www.linkedin.com/in/manoeltelesps)
-
-
+**Manoel Teles**  
+**LinkedIn:** [Manoel Pedro](https://www.linkedin.com/in/manoeltelesps)
